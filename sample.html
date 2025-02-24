@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content = "width = device-width;initial-scale=1.0">
+<title>My webpage</title>
+<style>
+html{
+scroll-behaviour:smooth 0.4s ease;
+}
+header,nav{
+background-color:#333;
+color:#fff;
+text-align:center;
+position:sticky;
+top:0;
+z-index:3;
+}
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+height:10vh;
+border-radius:5px;
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:rgba(0, 0, 0, 0.5);
+}
+nav p{
+font-size:1.2em;
+color:black;
+}
+nav ul{
+display:flex;
+list-style:none;
+}
+nav ul a:hover{
+background-color:#555;
+border-radius:5px;
+color:black;
+}
+nav ul a{
+text-decoration:none;
+padding:0.2em;
+margin:auto 0.2em;
+color:white;
+}
+nav div{
+text-weight:bold;
+
+color:white;
+font-size:1.3em;
+}
+nav ul div:hover{
+background-color:#555;
+border-radius:5px;
+color:black;
+}
+body{
+background: url('https://github.com/Robert-Richardson1599/htmlimages/blob/main/flowers.jpg?raw=true');
+background-size:cover;
+}
+.hero-section{
+height : 100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: url('https://github.com/Robert-Richardson1599/htmlimages/blob/main/flowers.jpg?raw=true');
+flex-direction:column;
+
+}
+#hero a{
+background-color:orange;
+color:white;
+border-radius:5px;
+text-decoration:none;
+padding:0.5em;
+}
+#hero p,#hero h1{
+background-color:rgba(255, 38, 71, 0.5);
+font-size:1.3em;
+padding:0.5em;
+}
+.service1{
+background-color:rgba(0, 0, 0, 0.2);
+padding:1.2em;
+border-radius:5px;
+margin:1.2em 0;
+text-align:center;
+}
+#about{
+background-color:#f4f4f4;
+padding:1.2em;
+border-radius:5px;
+margin:1.2em 0;
+text-align:center;
+}
+footer{
+background-color:black;
+color:white;
+height:20vh;
+border-radius:1.2em;
+text-align:center;
+margin:auto auto;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+<div id = "Title" style="text-align:center">
+<h1>Welcome to my page</h1></div>
+
+
+
+<nav>
+<div><h1>My logo</h1></div>
+<ul>
+<li><a href = #hero>Home</a></li>
+<li><a href = #about>About</a></li>
+<li><a href = #services>Services</a></li>
+<li><a href = #contact>Contact</a></li>
+</ul>
+</nav>
+
+</header>
+<section id = "hero" class = "hero-section">
+<h1>Welcome to our website</h1>
+<p>Our mission is to create a basic UI based website</p>
+<a href = #services>Get Started</a>
+</section>
+<section  id = "about">
+<div>Tell something about the company or organization</div>
+</section>
+<section id = "services">
+<h1 style="text-align:center;">Services </h1>
+<div class = "service1">
+<h2>Serice 1</h2>
+<p>Description of service 1.</p>
+</div>
+<div class = "service1">
+<h2>Serice 2</h2>
+<p>Description of service 2.</p>
+</div>
+<footer id = "foot">
+<p>&copy;Your company.All rights reserved.</p>
+</footer>
+<script>
+document.querySelectorAll('nav ul li a').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+e.preventDefault();
+const targetid = this.getAttribute('href').substring(1);
+document.getElementById(targetid).scrollIntoView({behavior:'smooth',
+block:'center'})
+});
+});
+</script>
+</body>
+</html>
