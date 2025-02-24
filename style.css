@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-max-width:100%;
+
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-max-width:100%;
+
     width:100vw;
 }
 
@@ -17,7 +17,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-max-width:100%;
+
 }
 
 nav {
@@ -31,7 +31,7 @@ nav {
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
-max-width:100%;
+
 }
 
 nav ul {
