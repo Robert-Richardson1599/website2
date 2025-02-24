@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+max-width:100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+max-width:100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+max-width:100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+max-width:100%;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+max-width:100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url('https://github.com/Robert-Richardson1599/htmlimages/blob/main/flowers.jpg?raw=true'); /* You can add a relevant image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section .cta-btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .cta-btn:hover {
+    background-color: #e67e22;
+max-width:100%;
+}
+
+.about-section, .services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
